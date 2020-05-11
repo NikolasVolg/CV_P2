@@ -4,15 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <title>CV Bornot Nicolas</title>
+    <title>Le CV de Bornot Nicolas</title>
 </head>
 
 <body>
+
     <!-- nom en-tête -->
-    <div id="nom">
-        <h1 id="prenom"><span>NICOLAS</span> BORNOT</h1>
-        <h2 id="metier"><span>Dével</span>oppeur web freelance</h2>
-    </div>
+
+    <section class="entete">
+        <div id="nom">
+            <h1 id="prenom"><span>NICOLAS</span> BORNOT</h1>
+            <h2 id="metier"><span>Dével</span>oppeur web freelance</h2>
+        </div>
+    </section>
 
     <!-- COLONNE DROITE-->
 
@@ -20,11 +24,9 @@
 
     <section>
 
-        <header>
-            <div id="formation">
-                <i class="fas fa-graduation-cap"></i>
-                <h2>FORMATION</h2>
-            </div>
+        <header id="titre.formation">
+            <i class="fas fa-graduation-cap"></i>
+            <h2>FORMATION</h2>
         </header>
 
         <div id="conteneur.formation">
@@ -70,11 +72,9 @@
 
     <section>
 
-        <header>
-            <div id="xppro">
-                <i class="fas fa-briefcase"></i>
-                <h2>EXPERIENCES PROFESSIONNELLES</h2>
-            </div>
+        <header id="xppro">
+            <i class="fas fa-briefcase"></i>
+            <h2>EXPERIENCES PROFESSIONNELLES</h2>
         </header>
 
         <div id="conteneur.xp">
@@ -153,15 +153,13 @@
 
     </section>
 
-    <!-- Recommandations de l'Empire -->
+    <!-- Recommandations de Gandalf -->
 
     <section>
 
-        <header>
-            <div id="recommandations">
-                <i class="fas fa-pen-fancy"></i>
-                <h2>RECOMMANDATIONS</h2>
-            </div>
+        <header id="recomandations">
+            <i class="fas fa-pen-fancy"></i>
+            <h2>RECOMMANDATIONS</h2>
         </header>
 
         <div class="formation">
@@ -171,7 +169,7 @@
             <p>Email : <a href="mailto:#">tombombadil@email.com</a></p>
         </div>
 
-        <div class="foramtion">
+        <div class="formation">
             <p>ROBERT C. MARTIN</p>
             <p>Directeur ; Agence CleanC0de</p>
             <p>Tel : 06 10 11 01 60</p>
@@ -181,6 +179,43 @@
     </section>
 
     <!-- COLONNE GAUCHE -->
+
+    <section id="aside.photo">
+        <img src="photoCV_P2.png" alt="photo identité" title="photo du dev qui fera votre site">
+    </section>
+
+    <section id="aside">
+
+        <article class="apropos">
+            <p class="titre.aside">CONTACT</p>
+            <p>11 bis rue du masneuf<br> Moulin Moreau<br> 87700 Aixe sur Vienne</p>
+            <p>Téléphone<br>
+                <a href="tel:#">07 84 22 48 70</a></p>
+            <p>Email<br>
+                <a href="mailto : nicolas.bornot@gmail.com">nicolas.bornot@gmail.com</a></p>
+            <p>Site web<br>
+                <a href="#" title="Mais tu ne sais pas cliquer !">www.lamideveloppeur.fr</a></p>
+            <p>Skype<br>
+                <a href="callto:#">NicoBdevweb</a></p>
+        </article>
+
+        <article class="apropos">
+            <p class="titre.aside">À PROPOS DE MOI</p>
+            <p>Passionné par le monde du développement depuis le collège où, je souhaitais faire des jeux vidéos, on me dirigea vers des études de maquettiste PAO, où un camarade de classe m'a fait découvrir le monde du web qui commençait alors se démocratiser.
+                Après ces études qui ne me convenaient pas, j'ai par la suite, et durant de nombreuses années, fait plusieurs métiers, tout en gardant un contact avec le développement web avec la communauté du zéro, que je faisais en amateur. Aujourd'hui,
+                et grâce à toutes mes pérégrinations, je sais m'adapter vite et apprndre aux besoins de nouveaux savoir avec efficacité, répondre à des exigences même en terrain inconnu. Désormais, et grâce à la plateforme de formation OpenClassRooms,
+                le monde du web me compte parmi ses petites mains passionnées, avident de créations !</p>
+        </article>
+
+        <article class="apropos">
+            <p class="titre.aside">LOISIRS</p>
+            <i class="fas fa-camera"></i>
+            <i class="fas fa-bicycle"></i>
+            <i class="fas fa-book"></i>
+        </article>
+
+
+    </section>
 
 
 </body>
