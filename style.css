@@ -1,0 +1,104 @@
+#bloc_page {
+    width: 1185px;
+    margin: auto;
+}
+
+#colonne_droite {
+    width: 800px;
+    float: right;
+}
+
+#nom {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    margin-top: 100px;
+    padding-left: 65px;
+}
+
+#prenom {
+    font-size: 3rem;
+}
+
+#prenom span {
+    color: #F9A825;
+}
+
+#metier span {
+    text-decoration: underline #F9A825 2px;
+}
+
+#metier {
+    font-size: 1.6rem;
+}
+
+
+/* colonne formation, exppro, reco */
+
+#colonne_fer {
+    margin-top: 100px;
+}
+
+#conteneur_formation {
+    display: flex;
+    flex-flow: wrap-reverse column;
+    padding-left: 65px;
+}
+
+#titre_formation {
+    padding-left: 65px;
+}
+
+.formation {
+    text-align: left;
+    max-width: 450px;
+}
+
+#conteneur_xp {
+    display: flex;
+    flex-flow: wrap-reverse column;
+    padding-left: 65px;
+}
+
+#xppro {
+    padding-left: 65px;
+}
+
+#conteneur_recommandations {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 65px;
+}
+
+#recommandations {
+    padding-left: 65px;
+}
+
+
+/* colonne gauche */
+
+#colonne_gauche {
+    width: 375px;
+    float: left;
+    background-color: #F9A825;
+}
+
+#aside_photo {
+    display: flex;
+    justify-content: center;
+}
+
+#aside p {
+    text-align: justify;
+    max-width: 305px;
+    padding-left: 35px;
+}
+
+h3 {
+    color: #F9A825;
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
