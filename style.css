@@ -1,23 +1,22 @@
 #bloc_page {
     width: 1185px;
     margin: auto;
-}
-
-#colonne_droite {
-    width: 800px;
-    float: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #nom {
-    display: flex;
-    flex-direction: column;
-    line-height: 0px;
+    line-height: 10px;
     margin-top: 100px;
     padding-left: 65px;
 }
 
+#colonne_droite {
+    width: 800px;
+}
+
 #prenom {
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 #prenom span {
@@ -25,7 +24,9 @@
 }
 
 #metier span {
-    text-decoration: underline #F9A825 2px;
+    text-decoration-line: underline;
+    text-decoration-color: #F9A825;
+    /* yellow 800 sur material design */
 }
 
 #metier {
@@ -39,17 +40,38 @@
     margin-top: 100px;
 }
 
+#titre_formation i {
+    font-size: 1.8rem;
+}
+
+header {
+    margin-left: 65px;
+    border-bottom: solid 2px #F9A825;
+}
+
 #conteneur_formation {
     display: flex;
     flex-flow: wrap-reverse column;
     padding-left: 65px;
+    margin-top: 30px;
 }
 
-#titre_formation {
-    padding-left: 65px;
+i {
+    margin-right: 15px;
+    color: #F9A825;
+    font-size: 0.9rem;
 }
 
-.formation {
+.date_ville {
+    margin-top: 10px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    max-width: 200px;
+}
+
+.description {
+    margin-top: -70px;
     text-align: left;
     max-width: 450px;
 }
@@ -58,20 +80,38 @@
     display: flex;
     flex-flow: wrap-reverse column;
     padding-left: 65px;
+    margin-top: 30px;
 }
 
 #xppro {
-    padding-left: 65px;
+    margin-top: 80px;
+}
+
+#xppro i {
+    font-size: 1.8rem;
+}
+
+.date_villexp {
+    margin-top: 30px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    max-width: 200px;
+}
+
+#recommandations {
+    margin-top: 80px;
 }
 
 #conteneur_recommandations {
     display: flex;
     justify-content: space-between;
     padding-left: 65px;
+    margin-top: 30px;
 }
 
-#recommandations {
-    padding-left: 65px;
+#recommandations i {
+    font-size: 1.8rem;
 }
 
 
@@ -79,7 +119,6 @@
 
 #colonne_gauche {
     width: 375px;
-    float: left;
     background-color: #F9A825;
 }
 
@@ -96,9 +135,25 @@
 
 h3 {
     color: #F9A825;
-    background-color: #404040;
+    background-color: #424242;
+    /* grey 800 sur material design*/
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
+    margin-bottom: 30px;
+}
+
+.apropos p {
+    line-height: 1.3rem;
+}
+
+.apropos,
+.loisirs {
+    margin-top: 80px;
+}
+
+.loisirs i {
+    font-size: 3rem;
+    color: #424242;
 }
