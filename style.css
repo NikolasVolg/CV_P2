@@ -1,14 +1,19 @@
+@font-face {
+    font-family: 'Jost', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'jost';
+}
+
 #bloc_page {
-    width: 1185px;
+    width: 1180px;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
-}
-
-#nom {
-    line-height: 10px;
-    margin-top: 100px;
-    padding-left: 65px;
 }
 
 #colonne_droite {
@@ -17,6 +22,12 @@
 
 #photo-petitecran {
     display: none;
+}
+
+#nom {
+    line-height: 10px;
+    margin-top: 150px;
+    padding-left: 65px;
 }
 
 #prenom {
@@ -43,6 +54,19 @@
     margin-top: 100px;
 }
 
+header {
+    margin-left: 65px;
+    border-bottom: solid 2px #4DB6AC;
+}
+
+#conteneur_formation,
+#conteneur_xp {
+    display: flex;
+    flex-flow: wrap-reverse column;
+    padding-left: 65px;
+    margin-top: 30px;
+}
+
 .fa-graduation-cap,
 .fa-briefcase,
 .fa-pen-fancy {
@@ -61,19 +85,6 @@
     margin-right: 15px;
     color: #4DB6AC;
     font-size: 0.7rem;
-}
-
-header {
-    margin-left: 65px;
-    border-bottom: solid 2px #4DB6AC;
-}
-
-#conteneur_formation,
-#conteneur_xp {
-    display: flex;
-    flex-flow: wrap-reverse column;
-    padding-left: 65px;
-    margin-top: 30px;
 }
 
 .date_ville {
@@ -95,14 +106,6 @@ header {
     margin-top: 80px;
 }
 
-.date_villexp {
-    margin-top: 30px;
-    display: flex;
-    align-self: flex-end;
-    align-items: center;
-    max-width: 200px;
-}
-
 #conteneur_recommandations {
     display: flex;
     justify-content: space-between;
@@ -121,6 +124,8 @@ header {
 #aside_photo {
     display: flex;
     justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 50px;
 }
 
 h3 {
@@ -132,6 +137,7 @@ h3 {
     align-items: center;
     height: 50px;
     margin-bottom: 30px;
+    font-size: 1.5rem;
 }
 
 #aside p {
@@ -145,11 +151,9 @@ h3 {
     margin-top: 80px;
 }
 
-.loisirs {
-    align-content: flex-end;
-}
-
 .loisirs i {
+    justify-content: center;
+    text-align: center;
     font-size: 3rem;
     color: #616161;
 }
@@ -169,12 +173,17 @@ h3 {
         justify-content: center;
         background-color: #4DB6AC;
         margin-left: 65px;
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
     p {
         width: auto;
     }
     #nom {
         margin-top: 50px;
+    }
+    .date_ville {
+        width: 150px;
     }
     #conteneur_recommandations {
         display: flex;
@@ -190,11 +199,17 @@ h3 {
     }
     #aside p {
         justify-content: center;
-        text-align: justify;
+        text-align: center;
         padding: 35px;
     }
     .contact {
         padding-top: 0px;
+    }
+    .loisirs i {
+        justify-content: center;
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -206,6 +221,7 @@ h3 {
         margin-right: 0px;
     }
     #photo-petitecran {
+        justify-content: center;
         margin-left: 0px;
     }
     #nom {
@@ -213,6 +229,7 @@ h3 {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding-left: 0px;
     }
     #prenom {
         font-size: 1.7rem;
