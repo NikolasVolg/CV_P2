@@ -88,7 +88,6 @@ header {
 }
 
 .date_ville {
-    margin-top: 10px;
     display: flex;
     align-self: flex-end;
     align-items: center;
@@ -96,7 +95,7 @@ header {
 }
 
 .description {
-    margin-top: -70px;
+    margin-top: -80px;
     text-align: left;
     max-width: 450px;
 }
@@ -117,6 +116,8 @@ header {
 /* colonne gauche */
 
 #colonne_gauche {
+    display: flex;
+    flex-direction: column;
     width: 375px;
     background-color: #4DB6AC;
 }
@@ -140,7 +141,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-#aside p {
+#colonne_gauche p {
     text-align: justify;
     justify-content: center;
     padding-left: 35px;
@@ -148,12 +149,13 @@ h3 {
 }
 
 .apropos {
-    margin-top: 80px;
+    flex-grow: 1;
+    margin-top: 40px;
 }
 
 .loisirs i {
-    justify-content: center;
-    text-align: center;
+    margin-left: 50px;
+    padding-bottom: 20px;
     font-size: 3rem;
     color: #616161;
 }
@@ -202,18 +204,20 @@ h3 {
         text-align: center;
         padding: 35px;
     }
+    .apropos {
+        margin-top: 40px;
+    }
     .contact {
         padding-top: 0px;
     }
     .loisirs i {
         justify-content: center;
         text-align: justify;
-        padding-left: 30px;
-        padding-right: 30px;
+        margin-left: auto;
     }
 }
 
-@media (max-width: 739px) {
+@media (max-width: 741px) {
     #bloc_page {
         width: auto;
         display: flex;
@@ -235,7 +239,7 @@ h3 {
         font-size: 1.7rem;
     }
     #metier {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     #colonne_gauche,
     #colonne_droite {
@@ -265,17 +269,17 @@ h3 {
         margin-right: 0px;
     }
     #colonne_fer h2 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         text-align: center;
     }
     .fa-graduation-cap,
     .fa-briefcase,
     .fa-pen-fancy {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         justify-content: flex-start;
         text-align: left;
     }
     p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }
