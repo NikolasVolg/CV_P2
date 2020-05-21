@@ -9,6 +9,21 @@ p {
     font-family: 'jost';
 }
 
+a {
+    text-decoration: none;
+    color: #424242;
+    /* grey 800 sur material design */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #E0E0E0;
+    /* grey 300 */
+}
+
 #bloc_page {
     width: 1180px;
     margin: auto;
@@ -217,7 +232,7 @@ h3 {
     }
 }
 
-@media (max-width: 741px) {
+@media screen and (max-width: 741px) {
     #bloc_page {
         width: auto;
         display: flex;
