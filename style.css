@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'Jost', sans-serif;
-}
-
 h1,
 h2,
 h3,
@@ -37,9 +33,15 @@ a:active {
     width: 800px;
 }
 
+
+/*photo apparaissant uniquement en responsive tablette et smartphone*/
+
 #photo-petitecran {
     display: none;
 }
+
+
+/* en-tête du CV */
 
 #nom {
     line-height: 10px;
@@ -84,6 +86,27 @@ header {
     margin-top: 30px;
 }
 
+.date_ville {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    max-width: 200px;
+}
+
+.description {
+    margin-top: -80px;
+    text-align: left;
+    max-width: 450px;
+}
+
+#conteneur_recommandations {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 65px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .fa-graduation-cap,
 .fa-briefcase,
 .fa-pen-fancy {
@@ -104,31 +127,6 @@ header {
     font-size: 0.7rem;
 }
 
-.date_ville {
-    display: flex;
-    align-self: flex-end;
-    align-items: center;
-    max-width: 200px;
-}
-
-.description {
-    margin-top: -80px;
-    text-align: left;
-    max-width: 450px;
-}
-
-#xppro,
-#recommandations {
-    margin-top: 80px;
-}
-
-#conteneur_recommandations {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 65px;
-    margin-top: 30px;
-}
-
 
 /* colonne gauche */
 
@@ -142,7 +140,7 @@ header {
 #aside_photo {
     display: flex;
     justify-content: center;
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -188,6 +186,16 @@ h3 {
     color: #616161;
 }
 
+.fa-camera,
+.fa-bicycle,
+.fa-book {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* FORMAT tablette */
+
 @media screen and (max-width: 1201px) {
     #bloc_page {
         width: auto;
@@ -228,6 +236,9 @@ h3 {
     #aside_photo {
         display: none;
     }
+    h3 {
+        margin-top: 0;
+    }
     #aside p {
         justify-content: center;
         text-align: center;
@@ -235,6 +246,7 @@ h3 {
     }
     .apropos {
         margin-top: 40px;
+        padding-bottom: 20px;
     }
     .contact {
         padding-top: 0px;
@@ -245,6 +257,9 @@ h3 {
         margin: auto;
     }
 }
+
+
+/* FORMAT smartphone */
 
 @media screen and (max-width: 741px) {
     #bloc_page {
@@ -265,16 +280,33 @@ h3 {
         padding-left: 0px;
     }
     #prenom {
-        font-size: 1.7rem;
+        font-size: 2.2rem;
     }
     #metier {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     #colonne_gauche,
     #colonne_droite {
         width: auto;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    header {
+        margin-left: 0px;
+    }
+    #colonne_fer h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    #conteneur_formation,
+    #conteneur_xp {
+        display: grid;
+        grid-gap: 80px;
+        padding-left: 0;
+    }
+    .date_ville,
+    .description {
+        width: 100%;
     }
     #conteneur_recommandations {
         width: auto;
@@ -284,13 +316,6 @@ h3 {
         text-align: center;
         padding-left: 0px;
     }
-    header {
-        margin-left: 0px;
-    }
-    #colonne_fer h2 {
-        font-size: 1.3rem;
-        text-align: center;
-    }
     .fa-graduation-cap,
     .fa-briefcase,
     .fa-pen-fancy {
@@ -298,7 +323,7 @@ h3 {
         justify-content: flex-start;
         text-align: left;
     }
-    p {
-        font-size: 1.1rem;
+    .apropos {
+        padding-bottom: 20px;
     }
 }
