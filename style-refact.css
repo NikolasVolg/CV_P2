@@ -1,8 +1,12 @@
-h1,
+    h1,
 h2,
 h3,
 p {
     font-family: 'jost';
+}
+
+* {
+    box-sizing: border-box;
 }
 
 a {
@@ -26,13 +30,13 @@ body {
 
 header,
 section {
-    min-height: 40px;
-    max-width: 100%;
+    width: 100%;
 }
 
 header {
     text-align: center;
     padding-top: 20px;
+    max-height: 150px;
 }
 
 #prenom span {
@@ -90,6 +94,7 @@ section:nth-of-type(1) h3:nth-of-type(3)~div i {
     text-align: center;
     font-size: 32px;
     color: #616161;
+    padding-bottom: 20px;
 }
 
 section:nth-of-type(1) p {
@@ -100,8 +105,6 @@ section:nth-of-type(1) p {
 /* SECTION INFOS */
 
 section:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -157,34 +160,44 @@ section:nth-of-type(2) .recommandations p:nth-of-type(2) {
 
 @media screen and (min-width: 768px) {
     body {
-        max-width: 100%;
         display: flex;
+        flex-flow: wrap row-reverse;
     }
     header {
-        height: auto;
         width: 60%;
-        order: 1;
+        text-align: left;
+        padding: 115px 0 30px 30px;
     }
     section:nth-of-type(1) {
         width: 40%;
     }
-    section:nth-of-type(1) h3:nth-of-type(2) p {
-        flex-grow: 2;
+    section:nth-of-type(1) div:nth-of-type(1) {
+        padding: 65px 0 10px;
     }
     section:nth-of-type(2) {
         width: 60%;
-    }
-}
-
-@media screen and (min-width: 834px) {
-    section:nth-of-type(2) {
         display: flex;
+        flex-direction: column;
     }
-}
-
-@media screen and (min-width: 1025px) {
-    body {
-        max-width: 1024px;
-        margin: 0 auto;
+    @media screen and (min-width: 834px) {
+        section:nth-of-type(2) {
+            display: flex;
+        }
     }
-}
+    @media screen and (min-width: 1025px) {
+        body {
+            max-width: 1190px;
+            margin: 0 auto;
+        }
+        header {
+            width: 70%;
+        }
+        section:nth-of-type(1) {
+            width: 30%;
+        }
+        section:nth-of-type(2) {
+            width: 70%;
+            display: flex;
+            flex-flow: wrap-reverse column;
+        }
+    }
