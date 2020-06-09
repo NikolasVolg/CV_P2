@@ -158,8 +158,9 @@ section:nth-of-type(2) .description p:nth-of-type(2) {
     margin-top: 20px;
 }
 
-.infos {
-    padding: 20px 0 0;
+.infos p:nth-of-type(1) {
+    padding: 20px 0 15px;
+    text-transform: uppercase;
 }
 
 section:nth-of-type(2) .recommandations p:nth-of-type(1) {
@@ -305,12 +306,25 @@ section:nth-of-type(2) h4 {
         display: flex;
         flex-flow: wrap;
     }
-    .job {
-        display: flex;
-        flex-wrap: wrap;
+    .infos,
+    h4 {
+        justify-self: flex-end;
+        margin-left: 200px;
     }
     .infos {
-        justify-self: flex-end;
+        margin-top: -70px;
+    }
+    .job p:nth-of-type(1) {
+        margin-top: -45px;
+    }
+    .job p:nth-of-type(2) {
+        margin-left: 20px;
+    }
+    .infos p:nth-of-type(1) {
+        margin: 45px 0 15px;
+    }
+    .infos p:nth-of-type(2) {
+        margin-left: 0;
     }
     .conteneur_recommandations {
         display: flex;
@@ -364,9 +378,6 @@ section:nth-of-type(2) h4 {
     .infos {
         width: 5cm !important;
         margin-right: 1cm;
-    }
-    .info {
-        width: 10cm !important;
     }
     #conteneur_recommandations {
         display: flex;
