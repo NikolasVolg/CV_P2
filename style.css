@@ -14,12 +14,12 @@ a {
     text-decoration: none;
     color: #424242;
     /* grey 800 sur material design */
-    text-shadow: 0px 0 0px transparent;
-    transition: text-shadow 1s;
+    text-shadow: 0 0 0 transparent;
+    transition: text-shadow 0.6s;
 }
 
 a:hover {
-    text-shadow: 0px 0 10px #000000;
+    text-shadow: 0 0 10px #000000;
 }
 
 #landscape {
@@ -121,12 +121,21 @@ section:nth-of-type(1) p {
 
 /* SECTION INFOS */
 
+.job {
+    margin-top: 20px;
+}
+
 .job h4::before {
     content: "\f192";
     font-family: 'Font Awesome 5 Free';
     color: #4DB6AC;
     margin-right: 5px;
     font-weight: normal;
+}
+
+.infos p:nth-of-type(1) {
+    padding: 20px 0 5px;
+    text-transform: uppercase;
 }
 
 section:nth-of-type(2) {
@@ -152,15 +161,6 @@ section:nth-of-type(2) .description p:nth-of-type(1) {
 
 section:nth-of-type(2) .description p:nth-of-type(2) {
     padding: 5px 0 15px;
-}
-
-.job {
-    margin-top: 20px;
-}
-
-.infos p:nth-of-type(1) {
-    padding: 20px 0 15px;
-    text-transform: uppercase;
 }
 
 section:nth-of-type(2) .recommandations p:nth-of-type(1) {
@@ -198,12 +198,19 @@ section:nth-of-type(2) h4 {
         padding: 65px 0 10px;
     }
     section:nth-of-type(1) h3 {
-        margin-top: 150px;
+        margin-top: 70px;
+    }
+    section:nth-of-type(1) h3:nth-of-type(3) {
+        margin-top: 1500px;
+        /*et ajout en version desktop à 750px*/
     }
     section:nth-of-type(2) {
         width: 60%;
         text-align: left;
         padding-left: 30px;
+    }
+    section:nth-of-type(2) h4 {
+        margin-top: 30px;
     }
     .infos {
         justify-content: left;
@@ -246,6 +253,9 @@ section:nth-of-type(2) h4 {
     p:nth-of-type(2) {
         font-size: 1.2em;
     }
+    span {
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -272,6 +282,9 @@ section:nth-of-type(2) h4 {
     }
     section:nth-of-type(1) {
         width: 30%;
+    }
+    section:nth-of-type(1) h3:nth-of-type(3) {
+        margin-top: 770px;
     }
     .job::before {
         display: none;
@@ -302,13 +315,8 @@ section:nth-of-type(2) h4 {
     section:nth-of-type(2) h4 {
         font-size: 0.8em;
     }
-    .conteneur {
-        display: flex;
-        flex-flow: wrap;
-    }
     .infos,
     h4 {
-        justify-self: flex-end;
         margin-left: 200px;
     }
     .infos {
