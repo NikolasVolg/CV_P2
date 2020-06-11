@@ -263,6 +263,7 @@ section:nth-of-type(2) h4 {
         max-width: 1185px;
         margin: 0 auto;
         font-size: 20px;
+        box-shadow: 5px 10px 10px #424242;
     }
     p {
         font-size: 0.8em;
