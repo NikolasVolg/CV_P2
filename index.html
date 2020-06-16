@@ -23,7 +23,6 @@
     <!-- SECTION DÉTAILS -->
 
     <section>
-
         <div>
             <img src="./images/photo_CV_P2.png" alt="photo identité" title="It's-a me, Mario !">
         </div>
@@ -205,6 +204,23 @@
         <p>Le saviez-vous ?<br> Le <span>Macintosh</span> tire son nom d'une variété de pomme.</p>
     </div>
 
+   
+    <script>
+        const bodyElem = document.querySelector('body')
+        const sectionDetailElem = document.querySelector('body section:nth-of-type(1)')
+
+        const setSectionDetailHeight = (windowWidth, bodyHeight, elem) => {
+            elem.style.height = windowWidth < 768 ? '' : `${bodyHeight}px`
+        }
+
+        window.addEventListener('load', () => {
+            setSectionDetailHeight(window.innerWidth, bodyElem.clientHeight, sectionDetailElem)
+        })
+
+        window.addEventListener('resize', () => {
+            setSectionDetailHeight(window.innerWidth, bodyElem.clientHeight, sectionDetailElem)
+        })
+    </script>
 </body>
 
 </html>
