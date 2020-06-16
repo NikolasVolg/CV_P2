@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1, p, body {
+            margin: 0;
+            padding: 0;
+        }
+        header, section {
+            min-height: 40px;
+            width: 100%;
+        }
+
+        header {
+            background-color: salmon ;
+        }
+
+        section:nth-of-type(1) {
+            padding: 20px;
+        }
+
+        section:nth-of-type(1) div:nth-of-type(1) {
+            display: flex;
+            justify-content: center;
+        }
+
+        section:nth-of-type(1) h3 {
+            background-color: #464646;
+            color: skyblue;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 30px -20px 10px;
+        }
+
+        section:nth-of-type(1) p {
+            margin-top: 10px;
+        }
+
+        section:nth-of-type(1) h3:nth-of-type(1) ~ p:nth-child(2n+1) {
+            font-style: italic;
+        }
+
+        section:nth-of-type(1) h3:nth-of-type(1) ~ p:nth-child(2n) {
+            padding-left: 10px;
+            margin-top: 4px;
+        }
+
+        section:nth-of-type(1) h3:nth-of-type(2) ~ p {
+            text-align: justify;
+            padding: 0 !important;
+            font-style: initial !important;
+        }
+
+        section:nth-of-type(1) h3:nth-of-type(3) ~ div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section:nth-of-type(1) h3:nth-of-type(3) ~ div i {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        section:nth-of-type(2) {
+            background-color: lightgreen ;
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                display: flex;
+                flex-flow: wrap row-reverse;
+            }
+
+            header {
+                width: 60%;
+            }
+
+            section:nth-of-type(1) {
+                width: 40%;
+            }
+
+            section:nth-of-type(2) {
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width: 834px) {
+            section:nth-of-type(2) {
+                display: flex;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+            body {
+                max-width: 1024px;
+                margin: 0 auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <section>
+        <div>
+            <img src="./images/photo_CV_P2.png" alt="photo identité" title="It's-a me, Mario !">
+        </div>
+        <h3>contact</h3>
+        <p>Adresse</p>
+        <p>11 bis rue du masneuf Moulin Moreau 87700 Aixe sur Vienne</p>
+        <p>Téléphone</p>
+        <p><a href="tel:#" title="Call me (call me) on the line">07 84 22 48 70</a></p>
+        <p>Email</p>
+        <p><a href="mailto:nicolas.bornot@gmail.com" title="mon CaraMail n'est plus valide :(">nicolas.bornot@gmail.com</a></p>
+        <p>Site web</p>
+        <p><a href="https://github.com/NikolasVolg" title="Mais tu ne sais pas cliquer !">github.com/NikolasVolg</a></p>
+        <p>Skype</p>
+        <p><a href="callto:#" title="Je préférais MSN ;)">NicoBdevweb</a></p>
+        <h3>à propos de moi</h3>
+        <p>Passionné par le monde du développement depuis le collège où je souhaitais créer des jeux vidéos, on me dirigea vers des études de maquettiste PAO, où un camarade de classe m'a fait découvrir le monde du web qui commençait alors se démocratiser.</p>
+        <p>Après ces études qui ne me convenaient pas, j'ai par la suite, et durant de nombreuses années, fait plusieurs métiers, tout en gardant un contact amateur avec le développement web grâce à la communauté du zéro. Aujourd'hui, et grâce à toutes mes pérégrinations professionnelles, je sais m'adapter rapidement et apprendre de nouveaux savoir avec efficacité, répondre à des exigences même en terrain inconnu. Désormais, et grâce à la plateforme de formation OpenClassRooms, le monde du web me compte parmi ses petites mains passionnées, avident de créations !</p>
+        <h3>loisir</h3>
+        <div class="icones">
+            <i class="fas fa-camera"></i>
+            <i class="fas fa-bicycle"></i>
+            <i class="fas fa-book"></i>
+        </div>
+    </section>
+    <section>
+        <p>info</p>
+        <p>info</p>
+    </section>
+</body>
+</html>
