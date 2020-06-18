@@ -23,18 +23,17 @@
     <!-- SECTION DÉTAILS -->
 
     <section>
-
         <div>
             <img src="./images/photo_CV_P2.png" alt="photo identité" title="It's-a me, Mario !">
         </div>
 
         <h3>contact</h3>
         <p>Adresse</p>
-        <p>11 bis rue du Masneuf<br> Moulin Moreau<br> 87700 Aixe sur Vienne</p>
+        <p>11 bis rue du Masneuf<br>Moulin Moreau<br>87700 Aixe sur Vienne</p>
         <p>Téléphone</p>
         <p><a href="tel:#" title="Call me (call me) on the line">07 84 22 48 70</a></p>
         <p>Email</p>
-        <p><a href="mailto:nicolas.bornot@gmail.com" title="Des question ? Contactez-moi !">nicolas.bornot@gmail.com</a></p>
+        <p><a href="mailto:nicolas.bornot@gmail.com" title="Des questions ? Contactez-moi !">nicolas.bornot@gmail.com</a></p>
         <p>Site web</p>
         <p><a href="https://github.com/NikolasVolg" title="Direction mes Repo">github.com/NikolasVolg</a></p>
         <p>Skype</p>
@@ -205,6 +204,24 @@
         <p>Le saviez-vous ?<br> Le <span>Macintosh</span> tire son nom d'une variété de pomme.</p>
     </div>
 
+    <!-- Cette partie en JS a été réalisée a 99% par mon mentor  -->
+
+    <script>
+        const bodyElem = document.querySelector('body')
+        const sectionDetailElem = document.querySelector('body section:nth-of-type(1)')
+
+        const setSectionDetailHeight = (windowWidth, bodyHeight, elem) => {
+            elem.style.height = windowWidth < 768 ? '' : `${bodyHeight}px`
+        }
+
+        window.addEventListener('load', () => {
+            setSectionDetailHeight(window.innerWidth, bodyElem.clientHeight, sectionDetailElem)
+        })
+
+        window.addEventListener('resize', () => {
+            setSectionDetailHeight(window.innerWidth, bodyElem.clientHeight, sectionDetailElem)
+        })
+    </script>
 </body>
 
 </html>
